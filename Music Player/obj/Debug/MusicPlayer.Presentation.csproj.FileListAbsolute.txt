@@ -1,0 +1,62 @@
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Music Player.exe.config
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Music Player.exe
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Music Player.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\MusicPlayer.Presentation.csprojAssemblyReference.cache
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\AlbumView.g.cs
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\MainWindow.g.cs
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\MusicControlView.g.cs
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\PlaylistView.g.cs
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\App.g.cs
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Music Player_MarkupCompile.cache
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Music Player_MarkupCompile.lref
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\MainWindow.baml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\MusicControlView.baml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\PlaylistView.baml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\AlbumView.baml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\ResourceDictionary.baml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Music Player.g.resources
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Music_Player.Properties.Resources.resources
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\MusicPlayer.Presentation.csproj.GenerateResource.cache
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Music Player.exe
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Music Player.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\CommonServiceLocator.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.Unity.Wpf.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.Wpf.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.ValueTuple.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.Windows.Interactivity.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Unity.Abstractions.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Unity.Container.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.Unity.Wpf.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.Unity.Wpf.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.Wpf.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Prism.Wpf.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.ValueTuple.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Unity.Abstractions.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\Unity.Container.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\MusicPlayer.Presentation.csproj.CopyComplete
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\MusicPlayer.Logic.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\MusicPlayer.Logic.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\MusicPlayer.Data.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.Data.SQLite.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\taglib-sharp.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\MusicPlayer.Data.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.Data.SQLite.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\System.Data.SQLite.dll.config
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\NewPlaylistDialog.g.cs
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\obj\Debug\Views\NewPlaylistDialog.baml
+C:\Projects\TDM\Synoptic Project\Music Player\Music Player\bin\Debug\AxInterop.WMPLib.dll

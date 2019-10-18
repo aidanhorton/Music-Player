@@ -1,0 +1,288 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Music_Player.Views"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Style x:Key="CircularButton" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse x:Name="ButtonBorder" Fill="Transparent">
+                            <Ellipse.Effect>
+                                <DropShadowEffect BlurRadius="10" ShadowDepth="0" />
+                            </Ellipse.Effect>
+                        </Ellipse>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Setter TargetName="ButtonBorder" Property="Fill" Value="#474747" />
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="ButtonBorder" Property="Fill" Value="Gray" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="CircularButtonNoShadow" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse x:Name="ButtonBorder" Fill="Transparent" />
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Setter TargetName="ButtonBorder" Property="Fill" Value="Black" />
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="ButtonBorder" Property="Fill" Value="Gray" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TextButton" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="DarkGray" />
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="Foreground" Value="DimGray" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="CapsuleButton" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="FontWeight" Value="DemiBold" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border Name="Capsule" BorderThickness="1" CornerRadius="20,20,20,20" BorderBrush="Transparent" Background="White">
+                            <Border.Effect>
+                                <DropShadowEffect BlurRadius="10" ShadowDepth="0" />
+                            </Border.Effect>
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Setter TargetName="Capsule" Property="Background" Value="Gray" />
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="Capsule" Property="Background" Value="#474747" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Capsule" Property="Background" Value="Gray" />
+                            <Setter Property="Foreground" Value="#292929" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SongListBoxItem" TargetType="ListBoxItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListBoxItem">
+                    <Border Name="Border" BorderThickness="{TemplateBinding Border.BorderThickness}" Padding="{TemplateBinding Control.Padding}" BorderBrush="{TemplateBinding Border.BorderBrush}" Background="{TemplateBinding Panel.Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="Selector.IsSelectionActive" Value="True"/>
+                                <Condition Property="Selector.IsSelected" Value="True"/>
+                            </MultiTrigger.Conditions>
+                        </MultiTrigger>
+                        <Trigger Property="UIElement.IsMouseOver" Value="True">
+                            <Setter TargetName="Border" Property="Panel.Background" Value="#4a4a4a"/>
+                            <Setter TargetName="Border" Property="Border.BorderBrush" Value="Gray" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="TabItemIconTemplate" TargetType="TabItem">
+        <Grid>
+            <Ellipse Name="ButtonBorder" Fill="Transparent" Width="40" Height="40">
+                <Ellipse.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" />
+                </Ellipse.Effect>
+            </Ellipse>
+            <Image Source="/Music Player;component/Images/WhitePlay.png" Width="25" Height="25" Margin="4 0 0 0" />
+        </Grid>
+
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ButtonBorder" Property="Fill" Value="DimGray" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter TargetName="ButtonBorder" Property="Fill" Value="DarkSlateGray" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="TabItemTemplate" TargetType="TabItem">
+        <Grid>
+            <TextBlock Name="TabText" Text="{TemplateBinding Header}" TextAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Height="50" Padding="0 10 0 0" Margin="0 10">
+                <TextBlock.LayoutTransform>
+                    <RotateTransform Angle="90" />
+                </TextBlock.LayoutTransform>
+            </TextBlock>
+        </Grid>
+
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="TabText" Property="Foreground" Value="White" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter TargetName="TabText" Property="Foreground" Value="White" />
+                <Setter TargetName="TabText" Property="FontWeight" Value="Bold" />
+                <Setter TargetName="TabText" Property="FontSize" Value="20" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Key="PlayImage" TargetType="Image">
+        <Setter Property="Visibility" Value="Visible" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsPlaying, UpdateSourceTrigger=PropertyChanged}" Value="True">
+                <Setter Property="Visibility" Value="Collapsed" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="PauseImage" TargetType="Image">
+        <Setter Property="Visibility" Value="Collapsed" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsPlaying, UpdateSourceTrigger=PropertyChanged}" Value="True">
+                <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="SliderRepeatButton" TargetType="RepeatButton">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RepeatButton">
+                    <Border BorderThickness="1" BorderBrush="#303030" Background="#303030" Height="3" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SliderRepeatButton1" TargetType="RepeatButton">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RepeatButton">
+                    <Border SnapsToDevicePixels="True" Background="White"  BorderThickness="1" BorderBrush="LightGray" Height="3"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SliderThumb" TargetType="Thumb">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Thumb">
+                    <Ellipse Height="10" Width="10">
+                        <Ellipse.Style>
+                            <Style TargetType="Ellipse">
+                                <Setter Property="Fill" Value="White" />
+                                <Style.Triggers>
+                                    <Trigger Property="Thumb.IsMouseOver" Value="True">
+                                        <Setter Property="Fill" Value="DarkGray" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Ellipse.Style>
+                    </Ellipse>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="Slider" TargetType="Slider">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Track Grid.Row="1" x:Name="PART_Track">
+                <Track.DecreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource SliderRepeatButton1}"  Command="Slider.DecreaseLarge" />
+                </Track.DecreaseRepeatButton>
+                <Track.Thumb>
+                    <Thumb Style="{StaticResource SliderThumb}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="DragStarted">
+                                <i:InvokeCommandAction Command="{Binding SliderDragStartedCommand}" />
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="DragCompleted">
+                                <i:InvokeCommandAction Command="{Binding SliderDragCompletedCommand}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Thumb>
+                </Track.Thumb>
+                <Track.IncreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource SliderRepeatButton}" Command="Slider.IncreaseLarge" />
+                </Track.IncreaseRepeatButton>
+            </Track>
+        </Grid>
+    </ControlTemplate>
+
+    <Style x:Key="SongSlider" TargetType="Slider">
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Horizontal">
+                <Setter Property="MinHeight" Value="21" />
+                <Setter Property="MinWidth" Value="104" />
+                <Setter Property="Template" Value="{StaticResource Slider}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

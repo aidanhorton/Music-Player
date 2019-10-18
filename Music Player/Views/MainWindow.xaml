@@ -1,0 +1,40 @@
+﻿<Window x:Class="Music_Player.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Music_Player.Views"
+        mc:Ignorable="d"
+        Title="Music Player"
+        MinHeight="400" MinWidth="700"
+        Height="450" Width="800">
+
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+            <GradientStop Color="#6466b0" Offset="0" />
+            <GradientStop Color="Black" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <TabControl Background="Transparent" BorderThickness="0 0 1 0" BorderBrush="DimGray" TabStripPlacement="Right">
+            <TabItem Template="{StaticResource TabItemIconTemplate}" Height="50">
+                <local:MusicControlView DataContext="{Binding MusicControlViewModel}" />
+            </TabItem>
+            <TabItem Header="Playlists" Template="{StaticResource TabItemTemplate}">
+                <local:PlaylistView DataContext="{Binding PlaylistViewModel}" />
+            </TabItem>
+            <TabItem Header="Albums" Template="{StaticResource TabItemTemplate}">
+                <local:AlbumView DataContext="{Binding AlbumViewModel}" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
